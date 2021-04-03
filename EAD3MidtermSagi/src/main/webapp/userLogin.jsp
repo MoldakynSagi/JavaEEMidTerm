@@ -41,6 +41,7 @@
         <div class="form-group">
             <input type="text" class="form-control" placeholder="Username" required="required" name="name">
         </div>
+        <h1>Hello world</h1>
         <div class="form-group">
             <input type="password" class="form-control" placeholder="Password" required="required" name="password">
         </div>

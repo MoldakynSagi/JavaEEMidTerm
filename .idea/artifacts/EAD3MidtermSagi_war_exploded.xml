@@ -1,0 +1,23 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="EAD3MidtermSagi:war exploded">
+    <output-path>$PROJECT_DIR$/EAD3MidtermSagi/target/EAD3MidtermSagi</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <exploded>true</exploded>
+        <module>EAD3MidtermSagi</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="EAD3MidtermSagi" />
+        </element>
+      </element>
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/EAD3MidtermSagi/target/EAD3MidtermSagi/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="javaee-facet-resources" facet="EAD3MidtermSagi/web/Web" />
+    </root>
+  </artifact>
+</component>
