@@ -11,6 +11,10 @@
 
 </head>
 <body>
+<%!
+    String name = " ";
+%>
+<h1>Hello <%= name = request.getParameter("name") %></h1>
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container">
         <a class="navbar-brand" href="#">Electronic shop </a>
@@ -22,6 +26,14 @@
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
                     <a class="nav-link" href="ViewToBuyElectronicsServlet">View Electronics</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link">
+                        <%
+                        String name = request.getParameter("name");
+                        out.print(name);
+                        pageContext.setAttribute("user",name,PageContext.SESSION_SCOPE);</a>
+                        %>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="UserLogoutServlet"> logout</a>

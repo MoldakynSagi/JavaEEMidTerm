@@ -1,3 +1,4 @@
+
 <%@ page language="java" contentType="text/html; charset=UTF-8"
          pageEncoding="UTF-8" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
@@ -18,6 +19,7 @@
 
 </head>
 <body>
+<% String name = ""; %>
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container">
         <a class="navbar-brand" href="userDashboard.jsp">Electronic shop </a>
@@ -30,6 +32,10 @@
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
                     <a class="nav-link" href="ViewToBuyElectronicsServlet">View Electronics</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link">
+                            <%= name = request.getParameter("name") %>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="UserLogoutServlet"> Logout</a>

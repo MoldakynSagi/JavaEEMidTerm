@@ -50,6 +50,14 @@
         </div>
     </form>
     <p class="text-center"><a href="userRegister.jsp">Create an Account</a></p>
+    <%
+        String password = request.getParameter("password");
+        String name = request.getParameter("name");
+        if (name == "" || name == null){%>
+        <jsp:forward page="error.jsp" />
+    <%} else if(password == "" || password != "user123"){%>
+        <jsp:forward page="error.jsp" />
+    <%}%>
 </div>
 </body>
 </html>

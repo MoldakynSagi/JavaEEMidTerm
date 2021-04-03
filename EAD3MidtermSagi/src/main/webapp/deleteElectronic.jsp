@@ -21,6 +21,7 @@
 
 </head>
 <body>
+<% String name = ""; %>
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container">
         <a class="navbar-brand" href="adminDashboard.jsp">Electronic shop </a>
@@ -42,6 +43,10 @@
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="OrdersServlet">Orders</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link">
+                            <%= name = request.getParameter("name") %>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="UserLogoutServlet"> Logout</a>

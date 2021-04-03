@@ -50,7 +50,7 @@ public class UserLoginServlet extends HttpServlet {
 
                 request.getRequestDispatcher("userDashboard.jsp").include(request, response);
             } else {
-                RequestDispatcher requestDispatcher = request.getRequestDispatcher("index.jsp");
+                RequestDispatcher requestDispatcher = request.getRequestDispatcher("error.jsp");
                 requestDispatcher.include(request, response);
             }
 
